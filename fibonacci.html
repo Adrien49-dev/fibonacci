@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr-FR">
+<head>
+<meta charset="utf-8" />
+<title>Suite de Fibonacci</title>
+<link rel="stylesheet" href="fibonacci.css">
+<script src="fibonacci.js"></script>
+</head>
+<body>
+   <h1>Suite de Fibonacci</h1>
+   <h2>1 - Données</h2>
+   <table>
+      <tr>
+         <td>
+            <label for=u0>
+               <em>u</em>
+               <sub>0</sub>
+               =
+            </label>
+         </td>
+         <td>
+            <input type="text" id="u0" name="u0" value="0" size="5" />
+         </td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>
+            <label for=u1>
+               <em>u</em>
+               <sub>1</sub>
+               =
+            </label>
+         </td>
+         <td>
+            <input type="text" id="u1" name="u1" value="1" size="5" />
+         </td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>
+            <label for=n>
+               <em>n=</em>
+            </label>
+         </td>
+         <td>
+            <input type="text" id="n" name="n" value="10" size="5" />
+         </td>
+         <td>(dans l'intervalle [0, 20])</td>
+      </tr>
+   </table>
+   <input type="button" id="button" name="button" value="Calculer" onclick="calculer();" />
+   <h2>2 - Résultats</h2>
+   <table>
+      <tr>
+         <td>
+            <label for=un>
+               <em>
+                  u
+                  <sub>n</sub>
+               </em>
+               =
+            </label>
+         </td>
+         <td>
+            <input type="text" id="un" name="un" value="" size="5" readonly />
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <label for=sn>
+               <em>
+                  s
+                  <sub>n</sub>
+               </em>
+               =
+            </label>
+         </td>
+         <td>
+            <input type="text" id="sn" name="sn" value="" size="5" readonly />
+         </td>
+      </tr>
+   </table>
+   <label for=fenetre>Fenêtre des valeurs de la suite de Fibonacci</label>
+   <br />
+   <textarea id="fenetre" cols="48" rows="2" readonly></textarea>
+   <h2>3 - Histogramme</h2>
+   <div id="ici"></div>
+</body>
+</html>

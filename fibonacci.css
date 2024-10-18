@@ -1,0 +1,32 @@
+input[type=button] {
+  width: 350px;
+  height: 40px;
+  font-size: 120%;
+}
+
+td {
+  text-align: right;
+}
+
+textarea {
+  resize: none;
+}
+
+.celluleGrandeTable {
+  vertical-align: bottom;
+}
+
+.valeur {
+  text-align: center;
+  font-family: Arial, "Times New Roman";
+}
+
+.histo {
+  background: aquamarine;
+  vertical-align: bottom;
+  width: 40px;
+}
+
+.terme {
+  text-align: center;
+}
